@@ -32,7 +32,7 @@ form.addEventListener('submit', (e) => {
   const urlEncoded = new URLSearchParams(formData).toString();
 
   // application/x-www-form-urlencoded
-  fetch('http://localhost:8000/api/v1/notice/add', {
+  fetch('notice-f8ixgc1v9-safal-chhetris-projects.vercel.app/api/v1/notice/add', {
     method: "POST",
     body: urlEncoded,
     headers: {
@@ -107,7 +107,7 @@ form.addEventListener('submit', (e) => {
 // getJokes();
 
 async function getData() {
-  let response = await fetch("http://localhost:8000/api/v1/noticeData");
+  let response = await fetch("notice-f8ixgc1v9-safal-chhetris-projects.vercel.app/api/v1/noticeData");
   let data = await response.json();
   console.log(data);
   console.log(data.length);
