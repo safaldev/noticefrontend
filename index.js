@@ -1,46 +1,24 @@
-div = document.getElementById('fetched_jokes')
 
-// async function getJokes() {
-//     let x = await fetch("https://vercelb-ten.vercel.app/api/jokes");
-//     let y = await x.json();
-//     console.log(y);
-//     console.log(y[1]);
-//     let divA = document.createElement('h1')
-//     divA.textContent = y[0]['name'];
-//     document.getElementById('fetched_jokes').appendChild(divA)
-//   }
 
-//   getJokes()
+//   const form = document.querySelector('form');
 
-//   let dataA;
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
 
-  // fetch('https://vercelb-ten.vercel.app/api/jokes')
-  // .then((response)=> response.json())
-  // .then((data)=> dataA = data )
+//   const formData = new FormData(form)
 
-  // setTimeout(()=>{
-  //   console.log(dataA);
-  // },2000)
+//   const urlEncoded = new URLSearchParams(formData).toString();
 
-  const form = document.querySelector('form');
+//   // application/x-www-form-urlencoded
+//   fetch('https://ve/api/v1/notice/add', {
+//     method: "POST",
+//     body: urlEncoded,
+//     headers: {
+//       'Content-type': 'application/x-www-form-urlencoded'
+//     }
+//   })
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(form)
-
-  const urlEncoded = new URLSearchParams(formData).toString();
-
-  // application/x-www-form-urlencoded
-  fetch('https://vercelb-ten.vercel.app/api/v1/notice/add', {
-    method: "POST",
-    body: urlEncoded,
-    headers: {
-      'Content-type': 'application/x-www-form-urlencoded'
-    }
-  })
-
-  form.reset()
+  // form.reset()
 
 
 
@@ -107,7 +85,7 @@ form.addEventListener('submit', (e) => {
 // getJokes();
 
 async function getData() {
-  let response = await fetch("https://vercelb-ten.vercel.app/api/v1/noticeData");
+  let response = await fetch("https://tribhuwan-admin.vercel.app/api/v1/noticeData");
   let data = await response.json();
   console.log(data);
   console.log(data.length);
