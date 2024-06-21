@@ -1,0 +1,39 @@
+body{
+    background: #333;
+    color: #fff;
+}
+
+#mainContainer{
+    display:grid;
+    gap:20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto ;
+    grid-row-start: auto;
+}
+
+.notice{
+    padding:20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainContainer{
+        display:grid;
+        gap:20px;
+        grid-template-columns: auto auto ;
+        grid-row-start: auto;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #mainContainer{
+        display:grid;
+        gap:20px;
+        grid-template-columns: auto ;
+        grid-row-start: auto;
+    }
+  }
