@@ -27,6 +27,9 @@ You only need a modern web browser to view the static HTML files.
 
 ### Installation
 
+
+
+
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/](https://github.com/)[YourUsername]/[your-repo-name].git
@@ -41,3 +44,11 @@ You only need a modern web browser to view the static HTML files.
     *(Note: If you are using Tailwind via CDN, no build step is necessary. If you are using a local build process, mention it here.)*
 
 ## 📂 Project Structure
+
+
+
+
+
+
+Latest Info: THis UI? UI interface has been abandoned and new page eiill be made
+
