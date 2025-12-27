@@ -50,5 +50,3 @@ You only need a modern web browser to view the static HTML files.
 
 
 
-Latest Info: THis UI? UI interface has been abandoned and new page eiill be made
-
